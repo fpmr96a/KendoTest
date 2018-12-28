@@ -6,6 +6,10 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@progress/kendo-angular-layout';
 import { RippleModule } from '@progress/kendo-angular-ripple';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { PopupModule } from '@progress/kendo-angular-popup';
+
+
 
 
 
@@ -20,7 +24,9 @@ import { RippleModule } from '@progress/kendo-angular-ripple';
     ButtonsModule,
     BrowserAnimationsModule,
     LayoutModule,
-    RippleModule
+    RippleModule,
+    InputsModule,
+    PopupModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,9 +3,22 @@
     <kendo-tabstrip-tab [title]="'My Transfer List'" [selected]="true">
       <ng-template kendoTabContent>
         <p>
-        <button kendoButton (click)="onButtonClick()" [primary]="true">My Kendo UI Button</button>
+        <button kendoButton (click)="onButtonClick()" [primary]="true" #anchor>My Kendo UI Button</button>
+       
+        <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show">
+            <div class='content'>
+                <!-- User-defined content -->
+                Popup content.
+            </div>
+        </kendo-popup>
+       
         <button kendoButton look="outline">Outline Button</button>
         <button kendoButton look="flat">Flat Button</button>
+        <kendo-textbox-container floatingLabel="First name">
+            <input kendoTextBox />
+          </kendo-textbox-container>
+         
+          
         </p>
       </ng-template>
     </kendo-tabstrip-tab>

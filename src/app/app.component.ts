@@ -8,12 +8,19 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'app works!';
+  private toggleText: string = "Hide";
+  private show: boolean = true;
 
   public onTabSelect(e) {
     console.log(e);
   }
 
-  onButtonClick() {
-      this.title = 'Hello from Kendo UI!';
+  public onButtonClick() {
+    this.show = !this.show;
+    this.toggleText = this.show ? "Hidе" : "Show";
   }
+
+  
+
+  
 }
