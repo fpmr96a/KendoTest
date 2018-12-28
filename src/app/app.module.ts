@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@progress/kendo-angular-layout';
+import { RippleModule } from '@progress/kendo-angular-ripple';
+
 
 
 
@@ -17,7 +19,8 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
     BrowserModule,
     ButtonsModule,
     BrowserAnimationsModule,
-    LayoutModule
+    LayoutModule,
+    RippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
