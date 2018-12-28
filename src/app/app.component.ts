@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { items } from '../assets/data/items';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'app works!';
+  public items: any[] = items;
+  
   private toggleText: string = "Hide";
   private show: boolean = true;
 

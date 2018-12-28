@@ -8,6 +8,8 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
 import { RippleModule } from '@progress/kendo-angular-ripple';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { PopupModule } from '@progress/kendo-angular-popup';
+import { MenuModule } from '@progress/kendo-angular-menu';
+
 
 
 
@@ -26,7 +28,8 @@ import { PopupModule } from '@progress/kendo-angular-popup';
     LayoutModule,
     RippleModule,
     InputsModule,
-    PopupModule
+    PopupModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
