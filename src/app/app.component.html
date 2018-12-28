@@ -2,8 +2,8 @@
 <kendo-tabstrip (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab [title]="'My Transfer List'" [selected]="true">
       <ng-template kendoTabContent>
-        <p>
-        <button kendoButton (click)="onButtonClick()" [primary]="true" #anchor>My Kendo UI Button</button>
+        
+        <button kendoButton (click)="onButtonClick()" [primary]="true" #anchor>Show/Hide Popup</button>
        
         <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show">
             <div class='content'>
@@ -15,11 +15,23 @@
         <button kendoButton look="outline">Outline Button</button>
         <button kendoButton look="flat">Flat Button</button>
         <kendo-textbox-container floatingLabel="First name">
-            <input kendoTextBox />
-          </kendo-textbox-container>
-         
-          
-        </p>
+           <input kendoTextBox />
+        </kendo-textbox-container>
+          <br><br><br><br><br><br>
+          <br>
+          <div class="k-form-field " >
+              <span style="padding:10px;"><b>Gender:</b>  </span>
+              <input type="radio" name="gender" id="female" class="k-radio " >
+              <label class="k-radio-label" for="female" >Female  </label>
+              &nbsp;
+              <input type="radio" name="gender" id="male" class="k-radio" checked="checked" >
+              <label class="k-radio-label" for="male">Male</label>
+          </div>
+          <br><br><br>
+          <label class="k-form-field">
+              <input type="checkbox" id="auth-2fa" class="k-checkbox" checked="checked">
+              <label class="k-checkbox-label" for="auth-2fa">Enable two-factor authentication</label>
+          </label>
       </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab [title]="'Transfer List'">
