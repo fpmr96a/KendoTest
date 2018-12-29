@@ -1,10 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 $primary: #2E4d7B;
-
 $button-text: #2E4d7B;
-
 $button-gradient: #B0C4DE;
 
 
+.k-button.k-bare, .k-button.k-bare:hover {
+    color: $button-text;
+}
+
 
 @import "~@progress/kendo-theme-material/scss/all";
+
+.k-menu:not(.k-context-menu)>.k-item {
+    color: $button-text;
+}
+
+// Menu Item on Main Bar With Focus
+.k-menu:not(.k-context-menu) > .k-item:focus {
+    color: Red;
+}
+
+// Menu Item on Main Bar HOVER
+.k-menu:not(.k-context-menu) > .k-item:hover {
+    color: gray;
+}
+/* .k-item, .k-menu-item, .k-context-menu, .k-menu:not(.k-context-menu){
+    color: $button-text;
+    background-color: purple;
+} */
+
+// Background of Menu Bar
+.k-menu:not(.k-context-menu){
+    color: $button-text;
+    background-color: whitesmoke;
+}
